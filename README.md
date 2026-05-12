@@ -7,7 +7,7 @@ Mod that solves map captcha for you using OpenRouter API, primarily made for 2b2
 <table>
   <tr>
     <td>
-      <img src="images/preview.gif" alt="Preview" width="600">
+      <img src="images/preview.gif" alt="Preview" width="500">
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
