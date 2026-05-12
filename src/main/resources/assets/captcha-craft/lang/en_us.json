@@ -1,0 +1,21 @@
+{
+  "captcha-craft.midnightconfig.title": "Captcha Craft",
+  "captcha-craft.midnightconfig.category.general": "General",
+  "captcha-craft.midnightconfig.category.secret": "Secret",
+
+  "captcha-craft.midnightconfig.enabled": "Enabled",
+  "captcha-craft.midnightconfig.model": "AI Model",
+  "captcha-craft.midnightconfig.model.tooltip": "Default:\ngoogle/gemini-3.1-flash-lite\n\nYou can also try:\nqwen/qwen3-vl-8b-instruct\n\nIt's cheaper and faster but fails more",
+
+  "captcha-craft.midnightconfig.thinking": "Thinking Model",
+  "captcha-craft.midnightconfig.thinking.ThinkingLevel.MINIMAL": "Minimal",
+  "captcha-craft.midnightconfig.thinking.ThinkingLevel.LOW": "Low",
+  "captcha-craft.midnightconfig.thinking.ThinkingLevel.MEDIUM": "Medium",
+  "captcha-craft.midnightconfig.thinking.ThinkingLevel.HIGH": "High",
+
+  "captcha-craft.midnightconfig.delay": "Delay",
+  "captcha-craft.midnightconfig.triggerList": "Trigger Messages",
+
+
+  "captcha-craft.midnightconfig.apiKey": "Open Router API Key"
+}

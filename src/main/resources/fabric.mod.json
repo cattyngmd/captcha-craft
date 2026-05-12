@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "captcha-craft",
+  "version": "${version}",
+  "name": "Captcha Craft",
+  "description": "Mod that solves captcha using openrouter.ai api. Primarily made for 2b2t.org.ru :)",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/captcha-craft/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.cattyn.captchacraft.Main"
+    ],
+    "modmenu": [
+      "dev.cattyn.captchacraft.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "captcha-craft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
