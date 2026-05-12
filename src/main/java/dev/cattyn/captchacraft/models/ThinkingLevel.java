@@ -7,8 +7,4 @@ public enum ThinkingLevel {
     @SerializedName("low") LOW,
     @SerializedName("medium") MEDIUM,
     @SerializedName("high") HIGH;
-
-    public String getValue() {
-        return this.name().toLowerCase();
-    }
 }
