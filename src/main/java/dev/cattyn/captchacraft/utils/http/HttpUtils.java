@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import dev.cattyn.captchacraft.models.OpenRouterRequest;
 import dev.cattyn.captchacraft.models.OpenRouterResponse;
 import dev.cattyn.captchacraft.models.ProxyInfo;
+import dev.cattyn.captchacraft.utils.exceptions.HttpResponseException;
 
 import java.net.*;
 import java.net.http.HttpClient;
@@ -48,8 +49,19 @@ public final class HttpUtils {
         HttpClient client = LAZY_CLIENT.acquire(proxy, HttpUtils::createClient);
 
         return client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
+                .thenApply(HttpUtils::getOut)
                 .thenApply(json -> GSON.fromJson(json, OpenRouterResponse.class));
+    }
+
+    private static <T> T getOut(HttpResponse<T> response) {
+        int code = response.statusCode();
+        if (code == 407) {
+            throw new HttpResponseException(code, "invalid proxy auth credentials");
+        }
+        if (code == 401) {
+            throw new HttpResponseException(code, "invalid API credentials");
+        }
+        return response.body();
     }
 
     private static HttpClient createClient(ProxyInfo info) {
