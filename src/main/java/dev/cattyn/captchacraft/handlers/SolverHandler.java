@@ -2,6 +2,7 @@ package dev.cattyn.captchacraft.handlers;
 
 import dev.cattyn.captchacraft.config.Config;
 import dev.cattyn.captchacraft.models.OpenRouterResponse;
+import dev.cattyn.captchacraft.models.ProxyInfo;
 import dev.cattyn.captchacraft.utils.http.CaptchaRequest;
 import dev.cattyn.captchacraft.utils.http.HttpUtils;
 import dev.cattyn.captchacraft.utils.MapUtils;
@@ -50,7 +51,13 @@ public class SolverHandler {
     private void executeRequest(CaptchaRequest captcha) {
         long startTime = System.currentTimeMillis();
 
-        HttpUtils.request(captcha)
+        ProxyInfo proxy = null;
+        if (Config.proxyEnabled) {
+            if (Config.user.isBlank()) proxy = ProxyInfo.create(Config.host, Config.port);
+            else proxy = ProxyInfo.create(Config.host, Config.port, Config.user, Config.password);
+        }
+
+        HttpUtils.request(proxy, captcha)
                 .thenAccept(response -> handleResponse(response, startTime))
                 .exceptionally(ex -> {
                     handleError(ex);

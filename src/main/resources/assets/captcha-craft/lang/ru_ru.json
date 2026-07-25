@@ -1,21 +1,25 @@
 {
   "captcha-craft.midnightconfig.title": "Captcha Craft",
   "captcha-craft.midnightconfig.category.general": "Основные",
+  "captcha-craft.midnightconfig.category.proxy": "Прокси",
   "captcha-craft.midnightconfig.category.secret": "Секреты",
 
   "captcha-craft.midnightconfig.enabled": "Включено",
   "captcha-craft.midnightconfig.model": "Модель ИИ",
   "captcha-craft.midnightconfig.model.tooltip": "По умолчанию:\ngoogle/gemini-3.1-flash-lite\n\nВы также можете попробовать:\nqwen/qwen3-vl-8b-instruct\n\nОна дешевле и быстрее, но чаще ошибается",
-
   "captcha-craft.midnightconfig.thinking": "Рассуждение",
   "captcha-craft.midnightconfig.thinking.ThinkingLevel.MINIMAL": "Минимальное",
   "captcha-craft.midnightconfig.thinking.ThinkingLevel.LOW": "Низкое",
   "captcha-craft.midnightconfig.thinking.ThinkingLevel.MEDIUM": "Среднее",
   "captcha-craft.midnightconfig.thinking.ThinkingLevel.HIGH": "Высокое",
-
   "captcha-craft.midnightconfig.delay": "Задержка",
   "captcha-craft.midnightconfig.triggerList": "Триггер-фразы",
 
+  "captcha-craft.midnightconfig.proxyEnabled": "Использовать HTTP прокси",
+  "captcha-craft.midnightconfig.address": "Хост",
+  "captcha-craft.midnightconfig.port": "Порт",
+  "captcha-craft.midnightconfig.user": "Имя пользователя (необязательно)",
+  "captcha-craft.midnightconfig.password": "Пароль (необязательно)",
 
   "captcha-craft.midnightconfig.apiKey": "API ключ Open Router"
 }
