@@ -17,7 +17,7 @@ public final class Config extends MidnightConfig {
     @Entry(category = GENERAL) public static String model = GOOGLE_MODEL;
     @Entry(category = GENERAL) public static ThinkingLevel thinking = ThinkingLevel.MINIMAL;
     @Entry(category = GENERAL, min = 0, max = 20) public static int delay = 1;
-    @Entry(category = GENERAL) public static List<String> triggerList = Lists.newArrayList("Реши капчу", "Неверная капча");
+    @Entry(category = GENERAL) public static List<String> triggerList = Lists.newArrayList("Реши капчу", "Неверная капче");
 
     @Entry(category = PROXY) public static boolean proxyEnabled = false;
     @Entry(category = PROXY) public static String host = "127.0.0.1";
