@@ -7,7 +7,8 @@
   ],
   "client": [
     "MixinClientPacketListener",
-    "MixinLocalPlayer"
+    "MixinLocalPlayer",
+    "MixinMain"
   ],
   "injectors": {
     "defaultRequire": 1
