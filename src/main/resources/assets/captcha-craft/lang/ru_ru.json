@@ -1,4 +1,6 @@
 {
+  "modmenu.descriptionTranslation.captcha-craft": "Мод для решения капчи с помощью api openrouter.ai. Разработан специально под 2b2t.org.ru :)",
+
   "captcha-craft.midnightconfig.title": "Captcha Craft",
   "captcha-craft.midnightconfig.category.general": "Основные",
   "captcha-craft.midnightconfig.category.secret": "Секреты",
