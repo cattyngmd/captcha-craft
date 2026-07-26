@@ -16,7 +16,7 @@
   "captcha-craft.midnightconfig.triggerList": "Trigger Messages",
 
   "captcha-craft.midnightconfig.proxyEnabled": "Use HTTP proxy",
-  "captcha-craft.midnightconfig.address": "Host",
+  "captcha-craft.midnightconfig.host": "Host",
   "captcha-craft.midnightconfig.port": "Port",
   "captcha-craft.midnightconfig.user": "Username (optional)",
   "captcha-craft.midnightconfig.password": "Password (optional)",

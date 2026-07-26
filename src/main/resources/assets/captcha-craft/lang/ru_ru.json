@@ -16,7 +16,7 @@
   "captcha-craft.midnightconfig.triggerList": "Триггер-фразы",
 
   "captcha-craft.midnightconfig.proxyEnabled": "Использовать HTTP прокси",
-  "captcha-craft.midnightconfig.address": "Хост",
+  "captcha-craft.midnightconfig.host": "Хост",
   "captcha-craft.midnightconfig.port": "Порт",
   "captcha-craft.midnightconfig.user": "Имя пользователя (необязательно)",
   "captcha-craft.midnightconfig.password": "Пароль (необязательно)",
